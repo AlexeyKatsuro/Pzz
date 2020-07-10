@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Pzz" parent="Base.Theme.Pzz.NoActionBar">
+        <item name="colorPrimary">@color/brand_orange_variant</item>
+        <item name="colorPrimaryVariant">@color/brand_orange</item>
+        <item name="colorPrimaryDark">?attr/colorPrimaryVariant</item>
+        <item name="colorOnPrimary">#000000</item>
+
+        <item name="colorSecondary">@color/brand_blue_variant</item>
+        <item name="colorSecondaryVariant">@color/brand_blue</item>
+        <item name="colorOnSecondary">#000000</item>
+
+        <item name="android:colorBackground">@color/dark_sheet</item>
+    </style>
+
+    <style name="ThemeOverlay.Pzz.PopupOverlay.DayNight" parent="ThemeOverlay.Pzz.Dark" />
+
+</resources>

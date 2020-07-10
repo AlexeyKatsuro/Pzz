@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.alexeykatsuro.pzz.R" />
+
+        <variable
+            name="state"
+            type="com.alexeykatsuro.pzz.ui.home.HomeViewState" />
+
+        <variable
+            name="onMenu"
+            type="androidx.appcompat.widget.Toolbar.OnMenuItemClickListener" />
+
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            style="@style/Widget.Pzz.AppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                app:inflateMenu="@{R.menu.home_menu}"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:onMenuClick="@{onMenu}"
+                app:title="@string/pizzas"
+                app:titleTextColor="?colorPrimary" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="@style/Widget.Pzz.ProgressBar.InAppBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:visibleInvisibleFade="@{state.loading}"
+                tools:visibility="visible" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <com.airbnb.epoxy.EpoxyRecyclerView
+            android:id="@+id/home_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:itemCount="5" />
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:padding="18dp"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>

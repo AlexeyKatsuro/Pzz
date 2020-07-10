@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Platform.Theme.Pzz" parent="Platform.V23.Theme.Pzz"/>
+
+    <style name="Platform.V23.Theme.Pzz" parent="Platform.V22.Theme.Pzz" >
+        <item name="android:statusBarColor">?colorSurface</item>
+        <item name="android:windowLightStatusBar">@bool/is_light_theme</item>
+    </style>
+</resources>

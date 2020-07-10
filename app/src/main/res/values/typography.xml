@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextAppearance.Pzz.Setting" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textSize">@dimen/medium_text</item>
+        <item name="android:textColor">?android:textColorTertiary</item>
+    </style>
+
+    <style name="TextAppearance.Pzz.Licence" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">@dimen/bank_licence_text</item>
+    </style>
+
+    <style name="TextAppearance.Pzz.Headline5.Tertiary" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:textColor">?android:textColorTertiary</item>
+    </style>
+
+    <style name="TextAppearance.Pzz.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/malina_webfont</item>
+        <item name="android:fontFamily">@font/malina_webfont</item>
+    </style>
+    <style name="TextAppearance.Pzz.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/malina_webfont</item>
+        <item name="android:fontFamily">@font/malina_webfont</item>
+    </style>
+
+    <style name="TextAppearance.Pzz.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/malina_webfont</item>
+        <item name="android:fontFamily">@font/malina_webfont</item>
+    </style>
+
+    <style name="TextAppearance.Pzz.Error" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textColor">?colorError</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Widget.Pzz.TextView.Setting" parent="Widget.MaterialComponents.TextView">
+       <item name="android:textAppearance">@style/TextAppearance.Pzz.Setting</item>
+        <item name="android:paddingStart">@dimen/activity_horizontal_space</item>
+        <item name="android:paddingTop">@dimen/internal_chain_space</item>
+        <item name="android:paddingEnd">@dimen/activity_horizontal_space</item>
+        <item name="android:paddingBottom">@dimen/internal_chain_space</item>
+    </style>
+
+    <style name="Widget.Pzz.TextView.ErrorBar" parent="Widget.MaterialComponents.TextView">
+        <item name="android:background">?attr/colorError</item>
+        <item name="android:textColor">?attr/colorOnError</item>
+        <item name="android:textAppearance">?attr/textAppearanceCaption</item>
+    </style>
+
+</resources>

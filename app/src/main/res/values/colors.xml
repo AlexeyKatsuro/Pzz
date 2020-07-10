@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brand_orange">#ff5200</color>
+    <color name="brand_orange_variant">#FF844A</color>
+    <color name="brand_blue">#277dff</color>
+    <color name="brand_blue_variant">#5894EF</color>
+
+    <color name="white_sheet">#F6F6F6</color>
+    <color name="dark_sheet">#121212</color>
+
+    <color name="kelly">#16bc00</color>
+
+    <color name="ebonite">#475961</color>
+    <color name="aluminum">#96A3A8</color>
+
+    <color name="clay">#9D9E9E</color>
+
+    <!--Specific view colors -->
+    <color name="signature_pad_bg">#dcdcdc</color>
+    <color name="tulle">#32000000</color>
+    <color name="start">#33e3252b</color>
+    <color name="end">#00ffffff</color>
+</resources>

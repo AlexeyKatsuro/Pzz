@@ -1,0 +1,25 @@
+<resources>
+
+    <string name="app_name">Pzz</string>
+    <string name="pizzas">Пиццы у лисиццы</string>
+    <string name="cart">Корзина</string>
+
+    <string name="pizza_size_big">Большая</string>
+    <string name="pizza_size_medium">Стандартная</string>
+    <string name="pizza_size_thin">Тонкое тесто</string>
+    <string name="pizza_size_unknown">Неподдерживаемый</string>
+
+    <string name="pizza_type_variant">%1$s\n%2$s. %3$s</string>
+    <string name="price">%1$.2f</string>
+
+    <string name="error_connection">Ошибка соединения. Проверте подключение к интернету</string>
+    <string name="error_network">Сетевая ошибка</string>
+    <string name="error_unclassified">Неизвесткая ошибка</string>
+    <string name="error_timeout">Ошибка времени ожидание. Повторите попытку</string>
+    <string name="error_io">Ошибка записи на диск</string>
+    <string name="error_mapping">Ошибка парсинга JSON</string>
+    <string name="error_unauthorized">Сессия закрыта. Авторизитуйтесь</string>
+    <string name="to_basket">В корзину</string>
+
+
+</resources>

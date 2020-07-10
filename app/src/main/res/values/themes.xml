@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--In case of future overrides for different versions of android API-->
+    <style name="Platform.V22.Theme.Pzz" parent="Theme.MaterialComponents.DayNight">
+        <item name="android:statusBarColor">@color/tulle</item>
+    </style>
+    <style name="Platform.Theme.Pzz" parent="Platform.V22.Theme.Pzz" />
+
+    <style name="Base.Theme.Pzz" parent="Platform.Theme.Pzz">
+
+        <item name="textAppearanceHeadline6">@style/TextAppearance.Pzz.Headline6</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.Pzz.Headline5</item>
+        <item name="textAppearanceButton">@style/TextAppearance.Pzz.Button</item>
+        <item name="windowActionModeOverlay">true</item>
+
+        <item name="md_corner_radius">@dimen/dialog_corner_radius</item>
+        <item name="tabStyle">@style/Widget.Pzz.Tabs</item>
+        <item name="toolbarStyle">@style/Widget.Pzz.Toolbar</item>
+        <item name="textInputStyle">@style/Widget.Pzz.TextInputLayout.OutlinedBox.Dense</item>
+        <item name="materialButtonStyle">@style/Widget.Pzz.Button.UnelevatedButton</item>
+        <item name="materialButtonOutlinedStyle">@style/Widget.Pzz.Button.OutlinedButton</item>
+        <item name="android:progressBarStyle">@style/Widget.Pzz.ProgressBar</item>
+        <!--Dialog-->
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.Pzz.BottomSheetDialog</item>
+
+    </style>
+
+    <style name="Base.Theme.Pzz.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Pzz" parent="Base.Theme.Pzz.NoActionBar">
+        <item name="colorPrimary">@color/brand_orange</item>
+        <item name="colorPrimaryVariant">@color/brand_orange_variant</item>
+        <item name="colorPrimaryDark">?attr/colorPrimaryVariant</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+
+        <item name="colorSecondary">@color/brand_blue</item>
+        <item name="colorSecondaryVariant">@color/brand_blue_variant</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="android:colorBackground">@color/white_sheet</item>
+    </style>
+
+
+
+    <style name="Theme.Pzz.Splash">
+        <item name="android:windowBackground">@drawable/splash_drawable</item>
+    </style>
+
+
+
+    <style name="ThemeOverlay.Pzz.BottomSheetDialog" parent="ThemeOverlay.MaterialComponents.DayNight.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+    <style name="ThemeOverlay.Pzz.Light" parent="ThemeOverlay.MaterialComponents.Light">
+        <item name="colorPrimary">@color/brand_orange</item>
+    </style>
+
+    <style name="ThemeOverlay.Pzz.Dark" parent="ThemeOverlay.MaterialComponents.Dark">
+        <item name="colorPrimary">@color/brand_orange_variant</item>
+    </style>
+
+    <style name="ThemeOverlay.Pzz.PopupOverlay.DayNight" parent="ThemeOverlay.Pzz.Light" />
+
+    <style name="ThemeOverlay.Pzz.FullScreenDialog" parent="ThemeOverlay.MaterialComponents.Dialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">?colorSurface</item>
+    </style>
+</resources>

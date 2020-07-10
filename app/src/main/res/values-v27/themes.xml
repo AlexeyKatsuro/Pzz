@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Platform.Theme.Pzz" parent="Platform.V27.Theme.Pzz" />
+
+    <style name="Platform.V27.Theme.Pzz" parent="Platform.V23.Theme.Pzz" >
+        <item name="android:navigationBarColor">?android:colorBackground</item>
+        <item name="android:windowLightNavigationBar">@bool/is_light_theme</item>
+    </style>
+</resources>

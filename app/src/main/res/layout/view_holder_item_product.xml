@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.alexeykatsuro.pzz.data.entities.basket.Product" />
+
+        <variable
+            name="size"
+            type="String" />
+
+        <variable
+            name="count"
+            type="int" />
+
+        <variable
+            name="onCountMinus"
+            type="android.view.View.OnClickListener" />
+
+        <variable
+            name="onCountPlus"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_space"
+            android:layout_marginTop="@dimen/internal_chain_space_small"
+            android:layout_marginEnd="@dimen/activity_horizontal_space"
+            android:text="@{item.title}"
+            android:textAppearance="?textAppearanceHeadline6"
+            android:textColor="?attr/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Салями, ветчина и грибы" />
+
+        <TextView
+            android:id="@+id/text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_space"
+            android:layout_marginEnd="@dimen/activity_horizontal_space"
+            android:text="@{size}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            app:visibleGone="@{!size.isEmpty()}"
+            tools:text="@string/pizza_size_medium" />
+
+        <TextView
+            android:id="@+id/text_price_big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/activity_horizontal_space"
+            android:text="@{@string/price(item.price)}"
+            android:textAppearance="?textAppearanceHeadline5"
+            app:layout_constraintBottom_toBottomOf="@+id/button_plus"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/button_plus"
+            tools:text="17,90" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_minus"
+            style="@style/Widget.Pzz.Button.Count"
+            android:layout_marginStart="@dimen/activity_horizontal_space"
+            android:layout_marginTop="@dimen/internal_chain_space_micro"
+            android:layout_marginBottom="@dimen/internal_chain_space_micro"
+            android:onClick="@{onCountMinus}"
+            android:text="-"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_size"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/text_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/internal_chain_space_small"
+            android:text="@{String.valueOf(count)}"
+            android:textAppearance="?textAppearanceBody1"
+            app:layout_constraintBottom_toBottomOf="@+id/button_minus"
+            app:layout_constraintStart_toEndOf="@+id/button_minus"
+            app:layout_constraintTop_toTopOf="@+id/button_minus"
+            tools:text="3" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_plus"
+            style="@style/Widget.Pzz.Button.Count"
+            android:layout_marginStart="@dimen/internal_chain_space_small"
+            android:layout_marginTop="@dimen/internal_chain_space_micro"
+            android:layout_marginBottom="@dimen/internal_chain_space_micro"
+            android:onClick="@{onCountPlus}"
+            android:text="+"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_count"
+            app:layout_constraintTop_toBottomOf="@+id/text_size"
+            tools:ignore="HardcodedText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,137 @@
+<resources>
+
+
+    <style name="Widget.Pzz" parent="@android:style/Widget" />
+
+    <style name="Widget.Pzz.ProgressBar" parent="@style/Widget.AppCompat.ProgressBar">
+        <item name="android:indeterminate">true</item>
+        <item name="android:indeterminateTintMode">src_atop</item>
+        <item name="android:indeterminateTint">?attr/colorPrimary</item>
+    </style>
+
+    <style name="Widget.Pzz.ProgressBar.OnSurface">
+        <item name="android:indeterminateTint">?colorOnSurface</item>
+    </style>
+
+    <style name="Widget.Pzz.ProgressBar.Small">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+    </style>
+
+    <!--TextInputLayout-->
+    <style name="Widget.Pzz.TextInputLayout.OutlinedBox.Dense" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense" />
+
+    <style name="Widget.Pzz.TextInputLayout.Underline" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="materialThemeOverlay">@null</item>
+    </style>
+
+    <!--Button-->
+    <style name="Widget.Pzz.Button" parent="@style/Widget.MaterialComponents.Button" />
+
+
+    <style name="Widget.Pzz.Button.UnelevatedButton" parent="@style/Widget.MaterialComponents.Button.UnelevatedButton" />
+
+    <style name="Widget.Pzz.Button.Count" parent="@style/Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:layout_width">36dp</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textSize">26sp</item>
+        <item name="iconPadding">0dp</item>
+        <item name="iconGravity">textStart</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.Pzz.Circle</item>
+    </style>
+
+    <style name="Widget.Pzz.Button.TextButton" parent="@style/Widget.MaterialComponents.Button.TextButton" />
+
+    <style name="Widget.Pzz.Button.OutlinedButton" parent="@style/Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">?colorPrimary</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="Widget.Pzz.Button.AuthPin" parent="Widget.Pzz.Button.OutlinedButton">
+        <item name="android:layout_width">56dp</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:backgroundTint">?attr/colorSurface</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="iconPadding">0dp</item>
+        <item name="iconGravity">textStart</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.Pzz.Circle</item>
+    </style>
+
+    <style name="Widget.Pzz.Toolbar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="popupTheme">@style/ThemeOverlay.Pzz.PopupOverlay.DayNight</item>
+        <item name="android:background">?colorSurface</item>
+    </style>
+
+    <!-- Style for Toolbar which laid in AppBarLayout. -->
+    <style name="Widget.Pzz.Toolbar.InAppBar">
+        <!-- Don't overlay the background of AppBarLayout-->
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="Widget.Pzz.Toolbar.Elevated">
+        <item name="android:elevation">@dimen/elevation_app_bar</item>
+    </style>
+
+    <style name="Widget.Pzz.ProgressBar.InAppBar" parent="Widget.Pzz.ProgressBar.Horizontal">
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:layout_marginTop">-8dp</item>
+        <item name="android:layout_marginBottom">-8dp</item>
+        <item name="android:indeterminateOnly">true</item>
+    </style>
+
+    <style name="Widget.Pzz.ProgressBar.Horizontal" parent="Widget.AppCompat.ProgressBar.Horizontal"/>
+
+    <style name="Widget.Pzz.ProgressBar.Horizontal.StatusBar">
+        <item name="android:elevation">16dp</item>
+        <item name="android:paddingTop">3dp</item>
+    </style>
+
+    <style name="Widget.Pzz.AppBar" parent="@style/Widget.Design.AppBarLayout">
+        <item name="android:background">?attr/colorSurface</item>
+        <item name="android:elevation">@dimen/elevation_app_bar</item>
+    </style>
+
+
+    <style name="Widget.Pzz.Tabs" parent="@style/Widget.MaterialComponents.TabLayout">
+        <item name="tabTextAppearance">@android:style/TextAppearance.Widget.TabWidget</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="HorizontalLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">?dividerHorizontal</item>
+    </style>
+
+    <style name="VerticalLine">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">?dividerVertical</item>
+    </style>
+
+
+    <style name="Widget.Pzz.ElevatedLayout">
+        <item name="android:background">?colorSurface</item>
+        <item name="android:elevation">@dimen/elevation_low</item>
+    </style>
+
+    <style name="Widget.Pzz.NavigateUpImage">
+        <item name="android:src">?homeAsUpIndicator</item>
+        <item name="android:padding">@dimen/image_borderless_padding</item>
+        <item name="android:layout_margin">@dimen/image_borderless_padding</item>
+        <item name="android:background">?selectableItemBackgroundBorderless</item>
+    </style>
+
+
+    <style name="Widget.Pzz.CardView.Outlined" parent="Widget.MaterialComponents.CardView">
+        <item name="strokeColor">@color/stroke_color_card_outline</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cardElevation">0dp</item>
+    </style>
+
+
+</resources>
